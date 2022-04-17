@@ -1,0 +1,123 @@
+.listbox{
+	border: 1px solid black;
+	border-radius: 10px;
+	text-align: center;
+	margin: 80px 70px;
+	color: #585858;
+	font-family: Comic Sans MS;
+	display: flex;
+	flex-direction: row;
+}
+#productimg {
+    height: 600px;
+    width: 600px;
+    position: absolute;
+    left: 8%;
+	top: 30%;
+	border: 2px solid #a9a9a9;
+}
+
+#productimg model-viewer {
+    height: 600px;
+    width: 600px;
+    position: absolute;
+  
+    border: none;
+}
+.line{
+	border-left: 2px solid #A9A9A9;
+  height: 704px;
+  position: absolute;
+  left: 50%;
+  
+}
+.productdetails{
+	display: flex;
+	flex-direction: column;
+	margin-top: 80px;
+	margin-left: 60%;
+	align-items: center;
+}
+.proddesc{
+	width: 100%;
+	border: 1px solid black;
+	border-radius:5px ;
+	margin: 50px;
+}
+#qty{
+	width: 10%;
+	text-align: center;
+}
+#cart{
+	margin-top: 30px;
+	background-color: #F68989;
+	color: #585858;
+	border: none;
+	border-radius: 20px;
+	min-height: 30px;
+}
+#cart:hover{
+	cursor: pointer;
+	color: black;
+	background-color: pink;
+}
+.reviews{
+	border: 1px solid #585858;
+	margin: 50px;
+	padding:1% 15%;
+	font-family: Comic Sans MS;
+	color: #585858;
+}
+  
+  .heading {
+	font-size: 25px;
+	margin: 25px;
+  }
+  
+  .reviews.fa {
+	font-size: 25px;
+	color: #A9A9A9;
+  }
+  
+  .checked {
+	color:#F68989;
+  }
+  
+  
+  .side {
+	float: left;
+	width: 15%;
+	margin-top:10px;
+  }
+  
+  .middle {
+	margin-top:10px;
+	float: left;
+	width: 70%;
+  }
+  
+  .right {
+	text-align: right;
+  }
+  
+ 
+  .row:after {
+	content: "";
+	display: table;
+	clear: both;
+  }
+  
+  .bar-container {
+	width: 100%;
+	background-color: #f1f1f1;
+	text-align: center;
+	color: white;
+  }
+  
+  .bar-5 {width: 60%; height: 18px; background-color: palevioletred;}
+  .bar-4 {width: 30%; height: 18px; background-color: palevioletred;}
+  .bar-3 {width: 10%; height: 18px; background-color: palevioletred;}
+  .bar-2 {width: 4%; height: 18px; background-color: palevioletred;}
+  .bar-1 {width: 15%; height: 18px; background-color: palevioletred;}
+  
+  

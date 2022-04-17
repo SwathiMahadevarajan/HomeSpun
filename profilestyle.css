@@ -1,0 +1,26 @@
+.userdetails{
+  text-align: center;
+    font-family: Comic Sans MS;
+    border: 1px solid black;
+    border-radius: 10px;
+    margin: 80px 100px;
+
+}
+.userdetails a{
+  text-decoration: none;
+}
+.userdetails a:hover{
+  cursor: pointer;
+}
+.userdetails img{
+  width: 15%;
+}
+#name,.orders h3,h3{
+  color:#585858;
+}
+#email{
+  color: #F68989;
+}
+.userdetails hr{
+  width: 50%;
+}

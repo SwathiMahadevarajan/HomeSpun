@@ -1,0 +1,11 @@
+Model Information:
+* title:	戏剧小生
+* source:	https://sketchfab.com/3d-models/33a4694891ee47059888ace571f5c0b0
+* author:	tonylng (https://sketchfab.com/tonylng)
+
+Model License:
+* license type:	CC-BY-4.0 (http://creativecommons.org/licenses/by/4.0/)
+* requirements:	Author must be credited. Commercial use is allowed.
+
+If you use this 3D model in your project be sure to copy paste this credit wherever you share it:
+This work is based on "戏剧小生" (https://sketchfab.com/3d-models/33a4694891ee47059888ace571f5c0b0) by tonylng (https://sketchfab.com/tonylng) licensed under CC-BY-4.0 (http://creativecommons.org/licenses/by/4.0/)
