@@ -38,7 +38,7 @@
 </div>
 <div  style="max-width:500px">
 <div class="mySlides" >
-  <img  class="bg" src="https://www.manandesign.com/media/catalog/product/cache/b442a34f8f3cef19b43057ea91980dbb/d/a/dabu-catalogartboard_12_1.jpg"style="width:100%;">
+  <img  class="bg" src="https://www.mananandesign.com/media/calog/product/cache/b442a34f8f3cef19b43057ea91980dbb/d/a/dabu-catalogartboard_12_1.jpg"style="width:100%;">
 <div class="bg-text">Handlooms</div>
 </div>
 <div class="mySlides">
@@ -118,10 +118,10 @@
                   <div class="product-box">
                     <div class="product-img">
                       <a href="#" class="add-cart"><i class="fa fa-shopping-cart"></i></a>
-                      <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQxK0RHPZlYlhqKMGM_Ck0YcFYeNK-RwsFPeg&usqp=CAU">
+                      <img id=img1 src="#">
                     </div>
                     <div class="product-details">
-                        <a href="#" class="p-name">Watercolor papers</a>
+                        <a href="#" id=h1 class="p-name"></a>
                         <span class="p-price">20% off</span>
                     </div>
                   </div>
@@ -130,11 +130,11 @@
                      
                         <a href="#" class="add-cart"><i class="fa fa-shopping-cart"></i></a>
                      
-                      <img src="https://i0.wp.com/blog.mytastefulspace.com/wp-content/uploads/2019/05/2019-04-27-09.49.57-1.jpg?fit=3024%2C3024&ssl=1">
+                      <img id="img2"src="#">
                     </div>
                  
                     <div class="product-details">
-                        <a href="#" class="p-name">Pots</a>
+                        <a href="#" id=h2 class="p-name">Pots</a>
                         <span class="p-price">45% off</span>
                     </div>
                 </div>
@@ -147,11 +147,11 @@
                             <i class="fa fa-shopping-cart"></i>
                         </a>
                     
-                      <img src="https://s34506.pcdn.co/wp-content/uploads/2013/12/2-diy-kits-kids.jpg">
+                      <img id="img3"src="#">
                     </div>
                    
                     <div class="product-details">
-                        <a href="#" class="p-name">DIY Set</a>
+                        <a href="#" id="h3"class="p-name"></a>
                         <span class="p-price">35% off</span>
                     </div>
                 </div>
@@ -179,6 +179,26 @@
          </section>
 </body>
 <script>
+  var xhttp=new XMLHttpRequest();
+      var url="sample.json";
+      xhttp.onreadystatechange=function(){
+       if(this.readyState==4 && this.status==200)
+       {
+         var arr=JSON.parse(this.responseText);
+         displayCocktail(arr);
+       }
+      };
+      xhttp.open('GET',url,true);
+    xhttp.send();
+  function displayCocktail(data) {
+ document.getElementById('h1').innerHTML = data[0].display;
+  document.getElementById("img1").src = data[0].url;
+  document.getElementById('h2').innerHTML = data[1].display;
+  document.getElementById("img2").src = data[1].url;
+  document.getElementById('h3').innerHTML = data[2].display;
+  document.getElementById("img3").src = data[2].url;
+  
+  } 
 var myIndex = 0;
 carousel();
 
